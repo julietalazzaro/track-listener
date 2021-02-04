@@ -8,13 +8,13 @@ body {
 }
 
 header {
-  background-color: #aaa;
+  background-color: #dd7300;
   padding: 5px;
 }
 
 header img {
   display: inline;
-  height: 41px;
+  height: 38px;
 }
 
 header h1 {
@@ -42,6 +42,9 @@ footer {
   text-align: center;
 }
 
+footer img {
+  margin: 5px;
+}
 .tapa {
   margin: 0 auto;
   height: 300px;
@@ -51,4 +54,23 @@ footer {
 
 span {
   font-style: italic;
+}
+
+ul {
+  margin-left: 1em;
+}
+
+.center {
+  width: 200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+details {
+  margin: 0 35%;
 }
