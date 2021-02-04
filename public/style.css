@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto Slab", sans-serif; /* "Marcellus" */
+  font-family: "Roboto Condensed", sans-serif; /* "Marcellus" */
 }
 
 body {
@@ -20,6 +20,7 @@ header img {
 header h1 {
   display: inline;
   position: absolute;
+  font-weight: 100;
 }
 
 .container {
@@ -46,4 +47,8 @@ footer {
   height: 300px;
   padding: 10px;
   display: block;
+}
+
+span {
+  font-style: italic;
 }

@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="img/apple-music.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> <link rel="shortcut icon" href="img/apple-music.png" type="image/x-icon">
  
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@julietalazzaro" />
@@ -19,6 +19,16 @@
   <meta property="og:title" content="Coldplay - Fix you" />
   <meta property="og:description" content="A site to enjoy the song and discover interesting details about it" />
   <meta property="og:image" content="public/img/220px-Coldplay_-_Fix_You.jpg" />
+
+
+  <meta property="al:android:package" content="org.applinks" />
+<meta property="al:android:url" content="applinks://docs" />
+<meta property="al:android:app_name" content="App Links" />
+<meta property="al:ios:url" content="applinks://docs" />
+<meta property="al:ios:app_store_id" content="12345" />
+<meta property="al:ios:app_name" content="App Links" />
+<meta property="al:web:url"
+content="http://www.example.com/applinks_docs" />
 
   <title>Practica HTML</title>
 </head>
@@ -38,9 +48,30 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ducimus. Ipsum veritatis vel aliquid ipsa adipisci dolorem ut voluptatibus minus? Est labore similique quidem vero, error omnis temporibus excepturi quam.</p>
      
-      <audio src="Fix_You.mp3" controls>
-      Your browser does not support the <code>audio</code> element.
-</audio>
+<br>
+
+      <div itemscope itemtype="https://schema.org/AudioObject">
+       
+        <span itemprop="name"><b>Fix you</b></span>
+<br>
+        <audio src="Fix_You.mp3" controls>
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+      
+      <meta itemprop="encodingFormat" content="audio/mp3" />
+       <meta itemprop="contentUrl" content="https://julietalazzaro.github.io/track-listener/public/Fix_You.mp3" />
+       <meta itemprop="audio" content="https://julietalazzaro.github.io/track-listener/public/Fix_You.mp3" />
+       <meta itemprop="genre" content="Post-britpop" />
+      
+      <span class="description">
+            <meta itemprop="duration" content="T0M15S" />
+            <span itemprop="description">Recorded on a terrace of Girona a sunday morning</span>
+      </span>
+      </div>
+
+
+
+     
       <br>
     <details>
         <summary class="headers">
@@ -57,19 +88,19 @@
       When you lose something, you can't replace
       When you love someone, but it goes to waste
       Could it be worse?
-
+      <span>
       Lights will guide you home
       And ignite your bones
       <strong>And I will try to fix you</strong>
-
+      </span>
       And high up above or down below
       When you're too in love to let it go
       But if you never try, you'll never know
       Just what you're worth
-
+      <span>
       Lights will guide you home
       And ignite your bones
-      <strong>And I will try to fix you</strong>
+      <strong>And I will try to fix you</strong></span>
 
       Tears stream down your face
       When you lose something, you cannot replace
@@ -77,10 +108,11 @@
       Tears stream down your face
       I promise you, I will learn from my mistakes
       Tears stream down your face and I
-
+      <span>
       Lights will guide you home
       And ignite your bones
       <strong>And I will try to fix you</strong>
+        </span>
       </pre>
     </details>
 
