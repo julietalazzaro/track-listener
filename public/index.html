@@ -11,9 +11,11 @@
   <meta name="copyright" content="Julieta Lazzaro 2021">
   
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> <link rel="shortcut icon" href="img/apple-music.png" type="image/x-icon">
-  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto:wght@300;400;700&display=swap"
+  rel="stylesheet">
+  <link rel="shortcut icon" href="img/apple-music.png" type="image/x-icon">
+
   <!-- Robots -->
   <meta name="robots" content="index follow" />
 
@@ -27,35 +29,32 @@
   <meta property="og:type" content="music.song" />
 
   <!-- Twitter card -->
-
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:site" content="@julietalazzaro" />
   <meta property="twitter:title" content="Coldplay - Fix you" />
   <meta property="twitter:description" content="A site to enjoy Fix You from Coldplay and discover interesting details about it" />
   <meta property="twitter:image" content="https://tracklistener-b94f5.web.app/img/fixyou_verde.jpg" />
   <meta property="twitter:url" content="https://tracklistener-b94f5.web.app/" />
-<!-- 
-  <meta name="twitter:type" content="music.song" />
-  <meta name="twitter:site" content="@julietalazzaro" />
-  <meta name="twitter:creator" content="@julietalazzaro" /> -->
+  <meta property="twitter:creator" content="@julietalazzaro" /> 
+  <meta property="twitter:type" content="music/song" />
+
 
   <title>Practica HTML</title>
 </head>
 <body>
   <header>
     <img src="img/apple-music.png" alt="logo musica">
-    <h1>Track listener</h1>
+    <p>Track listener</p>
+    
     <ul>
       <li>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//tracklistener-b94f5.web.app/">Share on Facebook</a>
+    <a  class="btn btn-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//tracklistener-b94f5.web.app/">Share on Facebook</a>
 
       </li>
       <li>
-        <a
-          href="https://twitter.com/intent/tweet?text=20Veni%20a%20ver%20mi%20sitio%20de%20Fix%20You%20-%20Coldplay%https%3A//tracklistener-b94f5.web.app/">Share
-          on Twitter</a>
-    <a href="https://twitter.com/intent/tweet?text=https%3A//tracklistener-b94f5.web.app/">Share on Twitter</a>
-      </li>
+      <a class="btn btn-twitter" target="_blank"
+        href="https://twitter.com/intent/tweet?text=Veni%20a%20ver%20mi%20sitio%20de%20Fix%20You%20-%20Coldplay%0Ahttps%3A//tracklistener-b94f5.web.app/%20">Share
+        on Twitter</a> </li>
     </ul>
   </header>
   <section>
@@ -64,8 +63,7 @@
        <h1>Coldplay</h1>
        <h2>Fix You</h2>
        <hr>
-     </div>
-      
+     </div>      
     <br>
 
     <div itemscope itemtype="https://schema.org/AudioObject">
@@ -99,6 +97,7 @@
             <li>Autor: <span itemprop="creator">Chris Martin</span></li>
             <li>Fecha de publicacion: <span itemprop="datePublished">5 de septiembre de 2005</span></li>
           </ul>
+
         </div>
       </div>
     </div>
