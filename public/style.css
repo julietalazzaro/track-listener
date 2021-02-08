@@ -44,7 +44,8 @@ header ul li {
 }
 
 h1,
-h2 {
+h2,
+summary {
   font-family: "Marcellus SC";
 }
 section h1 {
@@ -71,8 +72,9 @@ span {
   font-style: italic;
 }
 
-ul {
+div ul {
   margin-left: 1em;
+  line-height: 30px;
 }
 
 li {
@@ -91,7 +93,13 @@ audio {
 }
 
 details {
-  margin: 0 35%;
+  margin: 0 auto;
+  width: 400px;
+  line-height: 25px;
+}
+summary {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .btn:link,
