@@ -4,6 +4,7 @@
   font-family: "Roboto Condensed", sans-serif; /* "Marcellus" */
 }
 
+/* HEADER */
 header {
   background-color: #ec407a;
   padding: 12px 5px 5px 5px;
@@ -12,23 +13,21 @@ header {
 }
 
 header img {
-  height: 38px;
+  height: 32px;
 }
 
 header p {
   display: inline;
   font-weight: 100;
-  font-size: 35px;
+  font-size: 30px;
   position: relative;
   top: -6px;
 }
 
 header ul {
-  list-style: none;
-  margin: 5px 0px;
-  margin-right: 5px;
-  display: inline;
   float: right;
+  list-style: none;
+  margin-right: 5px;
 }
 
 header ul li {
@@ -36,6 +35,30 @@ header ul li {
   display: inline;
   padding-right: 10px;
 }
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2px;
+  color: #fff;
+  width: 120px;
+  font-size: 13px;
+  text-align: center;
+  padding: 7px 5px;
+}
+
+.btn:hover {
+  border: solid 2px #fff;
+  padding: 5px 3px;
+}
+.btn-facebook {
+  background-color: #4167b2;
+}
+.btn-twitter {
+  background-color: #55acef;
+}
+
+/* SECTION */
 
 .container {
   background-color: #fff;
@@ -48,9 +71,50 @@ h2,
 summary {
   font-family: "Marcellus SC";
 }
-section h1 {
+h1 {
+  font-size: 2em;
+}
+h2 {
   font-size: 1.8em;
 }
+
+.center {
+  width: 200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+div ul {
+  margin-left: 1em;
+  line-height: 30px;
+}
+
+li {
+  list-style: square;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+span {
+  font-style: italic;
+  background-color: #f8bbd0;
+}
+
+details {
+  margin: 0 auto;
+  width: 400px;
+  line-height: 25px;
+}
+summary {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* FOOTER */
+
 footer {
   background-color: #333;
   color: #fff;
@@ -66,61 +130,4 @@ footer img {
   height: 300px;
   padding: 10px;
   display: block;
-}
-
-span {
-  font-style: italic;
-}
-
-div ul {
-  margin-left: 1em;
-  line-height: 30px;
-}
-
-li {
-  list-style: square;
-}
-
-.center {
-  width: 200px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-
-audio {
-  margin: 20px 0;
-}
-
-details {
-  margin: 0 auto;
-  width: 400px;
-  line-height: 25px;
-}
-summary {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 2px;
-  color: #fff;
-  width: 120px;
-  font-size: 13px;
-  text-align: center;
-  padding: 7px 5px;
-  opacity: 90%;
-}
-
-.btn:hover {
-  opacity: 100%;
-}
-.btn-facebook {
-  background-color: #4167b2;
-}
-.btn-twitter {
-  background-color: #55acef;
 }
